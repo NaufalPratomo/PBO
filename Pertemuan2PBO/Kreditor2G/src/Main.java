@@ -22,15 +22,15 @@ public class Main {
         System.out.println("Angsuran :"+angsuran);
 
         //Tampilkan header tabel
-        System.out.println("+-------------+--------------+---------------+");
-        System.out.println("| Angsuran Ke-| Jumlah Bayar | Sisa Pinjaman |");
-        System.out.println("+-------------+--------------+---------------+");
+        System.out.println("+--------------+--------------+---------------+");
+        System.out.println("| Angsuran Ke- | Jumlah Bayar | Sisa Pinjaman |");
+        System.out.println("+--------------+--------------+---------------+");
 
         //Tampilkan  isi tabel
         for (int i = 0; i < jumlahCicilan ; i++) {
             totalBayar -= angsuran;
-            System.out.printf("|%-13d| %-13.0f| %-14.0f|\n",i+1,angsuran,totalBayar);
-            System.out.println("+-------------+--------------+---------------+");
+            System.out.printf("|%14d| %13.1f| %14.1f|\n",i+1,angsuran,totalBayar);
+            System.out.println("+--------------+--------------+---------------+");
         }
     }
 }
